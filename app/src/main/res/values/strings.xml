@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">秀色壁纸</string>
+
+    <string name="tab_news">最新</string>
+    <string name="tab_hot">热门</string>
+    <string name="tab_special">专辑</string>
+    <string name="title_activity_wallpaper">秀色壁纸</string>
+
+</resources>
