@@ -5,4 +5,8 @@
     <item name="viewpager" type="id"/>
     <item name="viewpagertab" type="id"/>
     <item name="custom_text" type="id"/>
+    <item name="badge" type="id" />
+
+    <item name="btn_empty_retry" type="id"/>
+    <item name="btn_error_retry" type="id"/>
 </resources>

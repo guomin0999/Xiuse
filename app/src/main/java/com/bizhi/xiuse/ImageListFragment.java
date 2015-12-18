@@ -25,7 +25,7 @@ import com.koushikdutta.ion.Ion;
  * Use the {@link ImageListFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class ImageListFragment extends Fragment {
+public class ImageListFragment extends BaseFragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -54,18 +54,16 @@ public class ImageListFragment extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
     }
-
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_image_list, container, false);
+ 
+    public int getLayoutId() {
+        return R.layout.fragment_image_list;
     }
 
 
     RecyclerAdapter<BizhiData> adapter;
 
-    public void onViewCreated(View view, Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-        RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.list);
+    public void initView(ViewHolder holder) {
+        RecyclerView recyclerView = holder.get(R.id.list);
         recyclerView.setLayoutManager(new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL));
         //recyclerView.addItemDecoration(new SpacesItemDecoration(16));
 

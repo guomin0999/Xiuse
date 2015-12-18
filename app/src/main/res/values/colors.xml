@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#FFF</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#CCCCCC</color>
+
     <color name="white">#FFFFFFFF</color>
     <color name="black">#FF000000</color>
     <color name="black_20">#33000000</color>
@@ -24,4 +25,13 @@
         <item>@color/green_500</item>
         <item>@color/light_green_500</item>
     </integer-array>
+
+    <!--红色文字颜色-->
+    <color name="tab_text_p">#FEDC1D</color>
+    <!--银色文字颜色-->
+    <color name="tab_text_n">#BEBEBE</color>
+    <!--红色按钮背景颜色-->
+    <color name="btn_background_red">#F43847</color>
+    <!--灰色文字颜色-->
+    <color name="text_gray">#666666</color>
 </resources>

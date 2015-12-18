@@ -1,0 +1,56 @@
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimary"
+    android:contentInsetLeft="0dp"
+    android:contentInsetStart="0dp"
+    android:fitsSystemWindows="true"
+    android:minHeight="?actionBarSize"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?actionBarSize">
+
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selecotr_toolbar_back"
+            android:clickable="true"
+            android:gravity="center"
+            android:minHeight="?actionBarSize"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_back_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?selectableItemBackground"
+                android:drawableLeft="@drawable/ic_ab_back"
+                android:gravity="center"
+                android:minHeight="?actionBarSize"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="返回"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#000" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" android:text="标题"
+            android:singleLine="true"
+            android:textColor="#000" />
+    </RelativeLayout>
+
+
+</android.support.v7.widget.Toolbar>

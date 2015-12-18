@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@android:id/text1"
+        style="@style/Base.TextAppearance.AppCompat.Caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:drawablePadding="2dp"
+        android:drawableTop="@drawable/tab_home"
+        android:gravity="center"
+        android:text="赚钱"
+        android:textColor="@color/tab_text_color" />
+
+    <ImageView
+        android:id="@id/badge"
+        android:layout_width="8dip"
+        android:layout_height="8dip"
+        android:layout_above="@android:id/text1"
+        android:layout_marginTop="4dip"
+        android:layout_toRightOf="@android:id/text1"
+        android:src="@drawable/bg_circle_red"
+        android:visibility="visible" />
+
+</RelativeLayout>
